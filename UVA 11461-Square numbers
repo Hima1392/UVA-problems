@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int x,y,i,s;
+    while(scanf("%d %d",&x,&y)!=EOF)
+    {
+        if(x==0 && y==0)break;
+        int count=0;
+        for(i=x;i<=y;i++)
+        {
+            s=sqrt(i);
+            if((s*s)==i)
+                count++;
+        }
+        printf("%d\n",count);
+    }
+   return 0;
+}
