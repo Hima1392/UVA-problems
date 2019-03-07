@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int t,x,y,r;
+    float z,min,max;
+    scanf("%d",&t);
+    while(t--)
+    {
+        scanf("%d%d%d",&x,&y,&r);
+        z=sqrt((x*x)+(y*y));
+        min=r-z;
+        max=r+z;
+        printf("%.2f %.2f\n",min,max);
+    }
+    return 0;
+}
+
