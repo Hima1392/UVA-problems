@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int cs=0;
+    string s;
+    while(cin>>s)
+    {
+        cs++;
+        if(s=="*")break;
+        else if(s=="Hajj")
+            printf("Case %d: Hajj-e-Akbar\n",cs);
+        else if(s=="Umrah")
+            printf("Case %d: Hajj-e-Asghar\n",cs);
+    }
+    return 0;
+}
