@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int cs=0;
+    string a;
+
+    while((cin>>a))
+    {
+        cs++;
+        if(a=="#")break;
+        else if(a=="HELLO")
+            printf("Case %d: ENGLISH\n",cs);
+        else if(a=="HOLA")
+            printf("Case %d: SPANISH\n",cs);
+        else if(a=="HALLO")
+            printf("Case %d: GERMAN\n",cs);
+        else if(a=="BONJOUR")
+            printf("Case %d: FRENCH\n",cs);
+        else if(a=="CIAO")
+            printf("Case %d: ITALIAN\n",cs);
+        else if(a=="ZDRAVSTVUJTE")
+            printf("Case %d: RUSSIAN\n",cs);
+        else
+            printf("Case %d: UNKNOWN\n",cs);
+    }
+    return 0;
+}
+
