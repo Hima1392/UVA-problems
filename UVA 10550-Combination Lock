@@ -1,0 +1,22 @@
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int pos,c1,c2,c3,d1,d2,d3,result;
+    while(cin>>pos>>c1>>c2>>c3)
+          {
+              if((pos==0)&&(c1==0)&&(c2==0)&&(c3==0))break;
+                    if(pos<c1)d1=40-(c1-pos);
+                    else d1=(pos-c1);
+                    if(c1>c2)d2=40-(c1-c2);
+                    else d2=(c2-c1);
+                    if(c2<c3)d3=40-(c3-c2);
+                    else d3=(c2-c3);
+                result=360*2+d1*9+360+d2*9+d3*9;
+                cout<<result;
+                cout<<"\n";
+          }
+          return 0;
+          
+}
